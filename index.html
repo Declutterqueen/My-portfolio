@@ -1,129 +1,229 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mehreen Khalid – Frontend Web Developer & Writer</title>
+  <title>Mehreen Khalid – Frontend Developer & Writer</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
- <link href ="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family:  'Playfair Display', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #edf2fb;
-      color: #333;
-    }
-    header {
-      text-align: center;
-      padding: 2rem 1rem;
-      background-color: #edf2fb;
-    }
-    header img {
-      border-radius: 50%;
-      width: 120px;
-      height: 120px;
-      object-fit: cover;
-    }
-    header h1 {
-      margin: 1rem 0 0.5rem;
-      font-size: 1.8rem;
-      font-family: 'Playfair Display' sans-serif ;
-    }
-    header p {
-      color: #777;
-      font-size: 1rem;
-    }
-    .section {
-      padding: 2rem 1rem;
-      max-width: 900px;
-      margin: auto;
-    }
-    .section h2 {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 0.5rem;
-    }
-    .project {
-      margin-bottom: 2rem;
-    }
-    .project img {
-      width: 100%;
-      max-width: 600px;
-      display: block;
-      margin-bottom: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    .project a {
-      display: inline-block;
-      margin-right: 1rem;
-      color: #3f88c5;
-      text-decoration: none;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #edf2fb;
-      font-size: 0.9rem;
-      color: #888;
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
+  <link href="style.css", rel="stylesheet">
+ 
 </head>
 <body>
-  <header>
-    <img src="about.png" alt="Mehreen Khalid Avatar" />
-    <h1>Mehreen Khalid</h1>
-    <p>Frontend Developer, Blogger & Freelance Writer</p>
-  </header>
 
-  <section class="section">
-    <h2>About Me</h2>
-    <p>I’m Mehreen — a frontend web developer, blogger, and freelance writer from Pakistan. I love combining clean, modern design with writing that’s useful, honest, and rooted in real-life experiences.</p>
-    <p>I also designed and developed a lifestyle blog called <strong>Declutter Queen</strong>, focused on minimalism, home organization, and mindful living. While I didn’t write all the blog content myself, I created the full frontend layout, blog post template, and responsive design. It was a great opportunity to blend clean UI/UX with real-world blogging needs.</p>
-  </section>
-
-  <section class="section">
-    <h2>Projects</h2>
-
-    <div class="project">
-      <h3>To-Do List Web App</h3>
-      <img src="Todo-List.png" alt="To-Do List Project Screenshot" />
-      <p>This app helps users manage their daily tasks. Built using HTML, CSS, and JavaScript. It features a responsive design, dark mode toggle, and localStorage support.</p>
-      <a href="https://declutterqueen.github.io/Todo-list-app/" target="_blank">Live Demo</a>
-      <a href="https://github.com/DeclutterQueen/Todo-list-app" target="_blank">GitHub Repo</a>
-    </div>
-
-    <div class="project">
-      <h3>Online Meal Project</h3>
-      <img src="onlinemeal.png" alt="Online Meal Project Screenshot" />
-      <p>A food-related project hosted on Netlify. Includes meal ideas, recipe cards, and responsive layout. Built with frontend tech stack.</p>
-      <a href="https://jocular-belekoy-a29f34.netlify.app" target="_blank">Live Demo</a>
-    </div>
-<div class="project">
-  <h3>Declutter Queen Blog (The Clutter Edit)</h3>
-  <p>I designed and built this blog using HTML, CSS, and GitHub Pages. The layout is clean, responsive, and optimized for lifestyle content.</p>
-
-  <img src="storage.png" alt="Storage Blog Screenshot" />
-  <p><strong>Top 10 Amazon Storage Solutions That Actually Work</strong> – A blog post I wrote focused on smart home storage products, organization tips, and affordable finds from Amazon.</p>
-  <a href="https://declutterqueen.github.io/Declutter-portfolio/" target="_blank">Declutter Portfolio</a>
+<nav class="navbar">
+  <div class="nav-container">
+    <h2 class="nav-logo">MK</h2>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="menu-toggle">☰</div>
   </div>
-<div class="project">
-  <img src="decluter.png" alt="Shared Bedroom Blog Screenshot" />
-  <p><strong>How to Style Narrow & Shared Bedrooms</strong> – Another original blog post I contributed, offering layout tips, small-space design ideas, and cozy solutions for shared rooms.</p>
-
-  <a href="https://declutterqueen.github.io/The-Clutter-Edit/" target="_blank">The Clutter Edit</a>
-</div>
+</nav>
 
 
+ 
+<header class="front-header">
+  <div class="decorative-shapes">
+    <div class="circle circle1"></div>
+    <div class="circle circle2"></div>
+    <div class="wave"></div>
+  </div>
 
+  <div class="front-avatar-wrapper">
+    <img src="about.png" alt="Mehreen Khalid Avatar" class="front-avatar" />
+  </div>
+
+  <div class="front-text">
+    <h1>Mehreen Khalid</h1>
+    <p class="front-tagline">
+      <span class="highlight">Frontend Developer</span> • Lifestyle Blogger • Freelance Writer
+    </p>
+    <a href="#projects" class="front-btn">View Projects ↓</a>
+  </div>
+</header>
+
+
+
+
+  <!-- About Me Section -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>I’m Mehreen — a frontend web developer, lifestyle blogger, and freelance writer from Pakistan. I love creating websites that are clean, responsive, and user-friendly. Beyond coding, I write practical guides on minimalism, smart home solutions, and mindful living.</p>
   </section>
 
-  <footer>
-    <p>&copy; 2025 Mehreen Khalid. All rights reserved.</p>
-  </footer>
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <h2>My Skills</h2>
+    <div class="skills-container">
+      <div class="skill">
+        <h3>Frontend Development</h3>
+        <p>HTML, CSS, JavaScript, Responsive Design, Git, GitHub Pages, Netlify</p>
+      </div>
+      <div class="skill">
+        <h3>Writing & Blogging</h3>
+        <p>Lifestyle articles, Minimalism, Home Organization, SEO-friendly copy, Editing</p>
+      </div>
+      <div class="skill">
+        <h3>Tools & Productivity</h3>
+        <p>VS Code, Figma, Canva, ChatGPT for ideation, Research & Content Planning</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="projects-container">
+      <div class="project">
+        <h3>To-Do List Web App</h3>
+        <img src="Todo-List.png" alt="To-Do List Project Screenshot" />
+        <p>Task manager app with dark mode & localStorage. Built using HTML, CSS, JS.</p>
+        <a href="https://declutterqueen.github.io/Todo-list-app/" target="_blank">Live Demo</a>
+      </div>
+
+      <div class="project">
+        <h3>Online Meal Project</h3>
+        <img src="onlinemeal.png" alt="Online Meal Project Screenshot" />
+        <p>A responsive food project with recipe cards. Built using frontend technologies.</p>
+        <a href="https://onlinemeal29f34.netlify.app" target="_blank">Live Demo</a>
+      </div>
+
+      <div class="project">
+        <h3>Declutter Queen Blog</h3>
+        <img src="storage.png" alt="Declutter Queen Blog Screenshot" />
+        <p>A lifestyle blog featuring home organization & storage solutions.</p>
+        <a href="https://declutterqueen.github.io/Declutter-portfolio/" target="_blank">Portfolio</a>
+      </div>
+
+      <div class="project">
+        <h3>Shared Bedroom Styling Guide</h3>
+        <img src="decluter.png" alt="Shared Bedroom Blog Screenshot" />
+        <p>Blog post with decor & layout tips for cozy shared spaces.</p>
+        <a href="https://declutterqueen.github.io/The-Clutter-Edit/" target="_blank">Read Article</a>
+      </div>
+    </div>
+  </section>
+
+
+
+<header class="hero">
+  <div class="hero-left">
+    <div class="avatar-wrapper">
+      <img src="about.png" alt="Mehreen Khalid Avatar" class="avatar" />
+      <div class="avatar-shadow"></div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <h1>Mehreen Khalid</h1>
+    <p class="tagline">
+      <span class="highlight">Frontend Developer</span> | Lifestyle Blogger | Freelance Writer
+    </p>
+    <p class="intro">
+      I craft responsive websites and write practical lifestyle guides on minimalism, smart home solutions, and mindful living.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#contact" class="fancy-btn main-btn">Hire Me</a>
+      <a href="resume.pdf" target="_blank" class="fancy-btn secondary-btn">Download Resume</a>
+    </div>
+
+    <div class="social-links">
+      <a href="https://github.com/DeclutterQueen" target="_blank" class="icon-btn">GitHub</a>
+      <a href="https://www.linkedin.com/in/mehreen-khalid-53bbbb361" target="_blank" class="icon-btn">LinkedIn</a>
+      <a href="https://medium.com/@khalidmehri65" target="_blank" class="icon-btn">Medium</a>
+    </div>
+  </div>
+
+  <!-- Subtle Background Shapes -->
+  <div class="background-shape shape1"></div>
+  <div class="background-shape shape2"></div>
+</header>
+
+
+
+
+
+<!-- Education Section -->
+<section id="education" class="section">
+  <h2>Education</h2>
+  <div class="education-container">
+    <div class="education">
+      <img src="https://images.seeklogo.com/logo-png/22/2/university-of-the-punjab-logo-png_seeklogo-227705.png" alt="University of the Punjab Logo" class="edu-logo" />
+      <div>
+        <h3>University of the Punjab</h3>
+        <p><strong>Bachelor of Arts (History / Political Science)</strong></p>
+        <p>Oct 2021 – Oct 2023 | Grade: B</p>
+        <p>Joined study groups, attended seminars, and participated in academic discussions. Developed research, writing, and analytical skills.</p>
+      </div>
+    </div>
+
+    <div class="education">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS7pzk7Hj_Q7HW0IV1CsgRkXTuLTTLCOHDjw&s" alt="Govt. Degree College for Women, Dina Logo" class="edu-logo" />
+      <div>
+        <h3>Govt. Degree College for Women, Dina</h3>
+        <p><strong>Intermediate in Computer Science (ICS)</strong></p>
+        <p>Sep 2019 – Sep 2021 | Grade: A+</p>
+        <p>Studied Computer Science, Mathematics, and Economics. Improved problem-solving skills and actively joined projects, group work, and college activities.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Writing / Blog Samples Section -->
+  <section class="section">
+    <h2>Writing & Blog Samples</h2>
+    <div class="blog-container">
+      <div class="blog-post">
+        <h3>Top 10 Amazon Storage Solutions</h3>
+        <img src="storage.png" alt="Amazon Storage Blog Screenshot" />
+        <p>Practical guide on home storage products, organization tips, and affordable finds.</p>
+        <a href="https://declutterqueen.github.io/Declutter-portfolio/" target="_blank">Read Post</a>
+      </div>
+      <div class="blog-post">
+        <h3>How to Style Narrow & Shared Bedrooms</h3>
+        <img src="decluter.png" alt="Shared Bedroom Blog Screenshot" />
+        <p>Tips on minimalism, layout optimization, and decor for shared rooms.</p>
+        <a href="https://declutterqueen.github.io/The-Clutter-Edit/" target="_blank">Read Post</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <p>If you want to collaborate or hire me, feel free to reach out:</p>
+    <div class="contact-links">
+      <a href="mailto:mehreen.khalid@example.com" class="fancy-btn">Email Me</a>
+      <a href="https://github.com/DeclutterQueen" target="_blank" class="fancy-btn" >GitHub</a>
+      <a href="https://www.linkedin.com/in/mehreen-khalid-53bbbb361" target="_blank" class="fancy-btn">LinkedIn</a>
+      <a href="https://medium.com/@khalidmehri65" target="_blank" class="fancy-btn">Medium</a>
+    </div>
+  </section>
+<footer class="footer">
+  <div class="footer-container">
+    <p>&copy; 2025 Mehreen Khalid</p>
+    <div class="footer-links">
+      <a href="https://github.com/DeclutterQueen" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/mehreen-khalid-53bbbb361" target="_blank">LinkedIn</a>
+      <a href="https://medium.com/@khalidmehri65" target="_blank">Medium</a>
+    </div>
+  </div>
+</footer>
+<script src="script.js">
+
+ 
+
+  </script>
+
+
 </body>
 </html>
+
+
