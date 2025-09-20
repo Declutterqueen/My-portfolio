@@ -8,7 +8,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
   <link href="style.css", rel="stylesheet">
+
  
+
 </head>
 <body>
 
@@ -129,7 +131,7 @@
     </p>
 
     <div class="hero-buttons">
-      <a href="#contact" class="fancy-btn main-btn">Hire Me</a>
+      <a href="#contactModal" class="fancy-btn main-btn">Hire Me</a>
       <a href="resume.pdf" target="_blank" class="fancy-btn secondary-btn">Download Resume</a>
     </div>
 
@@ -216,11 +218,27 @@
     </div>
   </div>
 </footer>
-<script src="script.js">
+<!-- Contact Form Popup -->
+<div id="contactModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h2>Contact Me</h2>
+  
 
- 
+    <form action="https://formspree.io/f/mpwlwgbr" method="POST" class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit" class="fancy-btn">Send Message</button>
+    </form>
+    <div class="success-msg">✅ Your message has been sent!</div>
+  </div>
+  </div>
+    
 
-  </script>
+
+
+<script src="script.js"></script>
 
 
 </body>
