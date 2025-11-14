@@ -1,252 +1,395 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mehreen Khalid – Frontend Developer & Writer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
-  <link href="style.css", rel="stylesheet">
-
- 
-
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mehreen Khalid | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome (for icons) -->
+    <script src="https://kit.fontawesome.com/a2e0e6ad5b.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
+<!-- Navbar -->
 <nav class="navbar">
-  <div class="nav-container">
-    <h2 class="nav-logo">MK</h2>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <div class="menu-toggle">☰</div>
+  <div class="nav-logo">
+    <div class="logo-circle">M</div>
+    <span class="logo-text">Mehreen Khalid</span>
   </div>
+
+  <ul class="nav-links">
+     <li><a href="#home" class="nav-link">Home</a></li>
+    <li><a href="#projects" class="nav-link">Work</a></li>
+    <li><a href="#skills" class="nav-link">Skills</a></li>
+    <li><a href="#education" class="nav-link">Education</a></li>
+    <li><a href="#contact" class="nav-link">Contact</a></li>
+  </ul>
+
+  <div class="menu-toggle"><i class="fas fa-bars"></i></div>
 </nav>
 
 
- 
-<header class="front-header">
-  <div class="decorative-shapes">
-    <div class="circle circle1"></div>
-    <div class="circle circle2"></div>
-    <div class="wave"></div>
-  </div>
-
-  <div class="front-avatar-wrapper">
-    <img src="about.png" alt="Mehreen Khalid Avatar" class="front-avatar" />
-  </div>
-
-  <div class="front-text">
-    <h1>Mehreen Khalid</h1>
-    <p class="front-tagline">
-      <span class="highlight">Frontend Developer</span> • Lifestyle Blogger • Freelance Writer
-    </p>
-    <a href="#projects" class="front-btn">View Projects ↓</a>
-  </div>
-</header>
 
 
 
 
-  <!-- About Me Section -->
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>I’m Mehreen — a frontend web developer, lifestyle blogger, and freelance writer from Pakistan. I love creating websites that are clean, responsive, and user-friendly. Beyond coding, I write practical guides on minimalism, smart home solutions, and mindful living.</p>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills" class="section">
-    <h2>My Skills</h2>
-    <div class="skills-container">
-      <div class="skill">
-        <h3>Frontend Development</h3>
-        <p>HTML, CSS, JavaScript, Responsive Design, Git, GitHub Pages, Netlify</p>
-      </div>
-      <div class="skill">
-        <h3>Writing & Blogging</h3>
-        <p>Lifestyle articles, Minimalism, Home Organization, SEO-friendly copy, Editing</p>
-      </div>
-      <div class="skill">
-        <h3>Tools & Productivity</h3>
-        <p>VS Code, Figma, Canva, ChatGPT for ideation, Research & Content Planning</p>
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-left">
+      <div class="avatar-wrapper">
+        <img src="images/mehreen.png" alt="Mehreen Khalid" class="avatar">
+        <div class="avatar-shadow"></div>
       </div>
     </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="section">
-    <h2>Projects</h2>
-    <div class="projects-container">
-      <div class="project">
-        <h3>To-Do List Web App</h3>
-        <img src="Todo-List.png" alt="To-Do List Project Screenshot" />
-        <p>Task manager app with dark mode & localStorage. Built using HTML, CSS, JS.</p>
-        <a href="https://declutterqueen.github.io/Todo-list-app/" target="_blank">Live Demo</a>
-      </div>
-
-      <div class="project">
-        <h3>Online Meal Project</h3>
-        <img src="onlinemeal.png" alt="Online Meal Project Screenshot" />
-        <p>A responsive food project with recipe cards. Built using frontend technologies.</p>
-        <a href="https://onlinemeal29f34.netlify.app" target="_blank">Live Demo</a>
-      </div>
-
-      <div class="project">
-        <h3>Declutter Queen Blog</h3>
-        <img src="storage.png" alt="Declutter Queen Blog Screenshot" />
-        <p>A lifestyle blog featuring home organization & storage solutions.</p>
-        <a href="https://declutterqueen.github.io/Declutter-portfolio/" target="_blank">Portfolio</a>
-      </div>
-
-      <div class="project">
-        <h3>Shared Bedroom Styling Guide</h3>
-        <img src="decluter.png" alt="Shared Bedroom Blog Screenshot" />
-        <p>Blog post with decor & layout tips for cozy shared spaces.</p>
-        <a href="https://declutterqueen.github.io/The-Clutter-Edit/" target="_blank">Read Article</a>
-      </div>
-    </div>
-  </section>
-
-
-
-<header class="hero">
-  <div class="hero-left">
-    <div class="avatar-wrapper">
-      <img src="about.png" alt="Mehreen Khalid Avatar" class="avatar" />
-      <div class="avatar-shadow"></div>
-    </div>
-  </div>
-  <div class="hero-right">
-    <h1>Mehreen Khalid</h1>
+    <div class="hero-right">
+      <h1>Mehreen Khalid</h1>
+      <!--<p class="tagline">Frontend Developer & <span class="highlight">Writer</span></p>-->
     <p class="tagline">
-      <span class="highlight">Frontend Developer</span> | Lifestyle Blogger | Freelance Writer
-    </p>
+  <span id="typed-text"></span><span class="cursor">|</span>
+</p>
+
+<section class="hero">
+  <div class="hero-content">
     <p class="intro">
-      I craft responsive websites and write practical lifestyle guides on minimalism, smart home solutions, and mindful living.
+      I create responsive websites and write insightful blogs & essays about lifestyle, health, and minimalism.
     </p>
 
-    <div class="hero-buttons">
-     <!-- Make sure this is inside your hero-buttons div -->
-
-<a href="#contactModal" class="fancy-btn main-btn">Hire Me</a>
-
-      <a href="resume.pdf" target="_blank" class="fancy-btn secondary-btn">Download Resume</a>
-    </div>
-
-    <div class="social-links">
-      <a href="https://github.com/DeclutterQueen" target="_blank" class="icon-btn">GitHub</a>
-      <a href="https://www.linkedin.com/in/mehreen-khalid-53bbbb361" target="_blank" class="icon-btn">LinkedIn</a>
-      <a href="https://medium.com/@khalidmehri65" target="_blank" class="icon-btn">Medium</a>
+    <div class="contact-options">
+      <a href="https://wa.me/YourNumber" target="_blank" class="contact-card">
+        <img src="https://cdn-icons-png.flaticon.com/128/1384/1384007.png" alt="WhatsApp" class="contact-icon">
+      </a>
+      <a href="mailto:khalidmehri65@gmail.com" target="_blank" class="contact-card">
+        <img src="https://cdn-icons-png.flaticon.com/128/6244/6244710.png" alt="Email" class="contact-icon">
+      </a>
+      <a href="https://medium.com/@khalidmehri65" target="_blank" class="contact-card">
+        <img src="https://cdn-icons-png.flaticon.com/128/3670/3670068.png" alt="Medium" class="contact-icon">
+      </a>
+      <a href="https://www.linkedin.com/in/mehreen-khalid-53bbbb361/" target="_blank" class="contact-card">
+        <img src="https://cdn-icons-png.flaticon.com/128/1384/1384014.png" alt="LinkedIn" class="contact-icon">
+      </a>
     </div>
   </div>
+</section>
 
-  <!-- Subtle Background Shapes -->
-  <div class="background-shape shape1"></div>
-  <div class="background-shape shape2"></div>
-</header>
-
-
-
-
-
-<!-- Education Section -->
-<section id="education" class="section">
-  <h2>Education</h2>
-  <div class="education-container">
-    <div class="education">
-      <img src="https://images.seeklogo.com/logo-png/22/2/university-of-the-punjab-logo-png_seeklogo-227705.png" alt="University of the Punjab Logo" class="edu-logo" />
-      <div>
-        <h3>University of the Punjab</h3>
-        <p><strong>Bachelor of Arts (History / Political Science)</strong></p>
-        <p>Oct 2021 – Oct 2023 | Grade: B</p>
-        <p>Joined study groups, attended seminars, and participated in academic discussions. Developed research, writing, and analytical skills.</p>
-      </div>
+     
     </div>
+  </section>
 
-    <div class="education">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS7pzk7Hj_Q7HW0IV1CsgRkXTuLTTLCOHDjw&s" alt="Govt. Degree College for Women, Dina Logo" class="edu-logo" />
-      <div>
-        <h3>Govt. Degree College for Women, Dina</h3>
-        <p><strong>Intermediate in Computer Science (ICS)</strong></p>
-        <p>Sep 2019 – Sep 2021 | Grade: A+</p>
-        <p>Studied Computer Science, Mathematics, and Economics. Improved problem-solving skills and actively joined projects, group work, and college activities.</p>
-      </div>
+<!-- About Me Section -->
+<!--<section id="about" class="about-section">
+  <div class="container">
+    <h2>About Me <span class="verified-badge"></span></h2>
+    <p class="intro-text">
+      I’m <strong>Mehreen Khalid</strong> — a <strong>Frontend Developer</strong> 💻 and <strong>Freelance Writer</strong> ✍️ who loves creating clean, responsive websites and writing content that actually helps people.
+    </p>
+
+    <p>
+      I build with <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>, and share my writing on <strong>Medium</strong>, <strong>Fiverr</strong>, and my own blog, <strong>Declutter Queen</strong>.
+    </p>
+
+    <p>
+      When I’m not coding or writing, I’m exploring simple living, design ideas, and ways to make everyday life more intentional.
+    </p>
+  </div>
+</section>-->
+
+   
+
+<section id="about" class="about-section">
+  <!-- Full Background Image -->
+  <div class="about-bg-image">
+    <img src="images/Blur-image.jpg" alt="Background Image">
+  </div>
+
+  <!-- Text Overlay -->
+  <div class="about-overlay">
+    <div class="about-text">
+      <h1 class="about-title">About <span>Me</span></h1>
+
+      <p class="about-intro">
+        I’m <strong>Mehreen Khalid</strong> — a <strong>Frontend Developer</strong> 💻 and <strong>Freelance Writer</strong> ✍️ who enjoys turning ideas into digital experiences that look clean and feel effortless.
+      </p>
+
+      <p class="about-desc">
+        My focus is simple: build websites that are responsive, clear, and user-friendly — and write content that connects.  
+        I love working on projects that challenge creativity while keeping things practical.
+      </p>
+
+      <p class="about-desc">
+        When I’m not coding or writing, you’ll probably find me reading a novel, enjoying a cup of tea, or exploring design ideas that make everyday life simpler and more intentional.
+      </p>
+
+      <a href="#" class="main-btn">Download CV</a>
     </div>
   </div>
 </section>
 
 
-  <!-- Writing / Blog Samples Section -->
-  <section class="section">
-    <h2>Writing & Blog Samples</h2>
-    <div class="blog-container">
-      <div class="blog-post">
-        <h3>Top 10 Amazon Storage Solutions</h3>
-        <img src="storage.png" alt="Amazon Storage Blog Screenshot" />
-        <p>Practical guide on home storage products, organization tips, and affordable finds.</p>
-        <a href="https://declutterqueen.github.io/Declutter-portfolio/" target="_blank">Read Post</a>
-      </div>
-      <div class="blog-post">
-        <h3>How to Style Narrow & Shared Bedrooms</h3>
-        <img src="decluter.png" alt="Shared Bedroom Blog Screenshot" />
-        <p>Tips on minimalism, layout optimization, and decor for shared rooms.</p>
-        <a href="https://declutterqueen.github.io/The-Clutter-Edit/" target="_blank">Read Post</a>
-      </div>
-    </div>
-  </section>
+   
 
-  <!-- Contact Section -->
-  <section id="contact" class="section">
-    <h2>Contact Me</h2>
-    <p>If you want to collaborate or hire me, feel free to reach out:</p>
-    <div class="contact-links">
-      <a href="mailto:mehreen.khalid@example.com" class="fancy-btn">Email Me</a>
-      <a href="https://github.com/DeclutterQueen" target="_blank" class="fancy-btn" >GitHub</a>
-      <a href="https://www.linkedin.com/in/mehreen-khalid-53bbbb361" target="_blank" class="fancy-btn">LinkedIn</a>
-      <a href="https://medium.com/@khalidmehri65" target="_blank" class="fancy-btn">Medium</a>
+<section id="skills" class="section skills-section">
+  <h2 class="section-title">My Skills</h2>
+
+  <div class="skills-container">
+    <div class="skill-card" data-level="95">
+      <h3>HTML</h3>
+      <p>Clean, semantic markup for modern, accessible websites.</p>
+      <div class="skill-bar">
+        <div class="skill-progress" style="width: 95%;"></div>
+      </div>
+      <span class="skill-percent">95%</span>
     </div>
-  </section>
-<footer class="footer">
-  <div class="footer-container">
-    <p>&copy; 2025 Mehreen Khalid</p>
-    <div class="footer-links">
-      <a href="https://github.com/DeclutterQueen" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/mehreen-khalid-53bbbb361" target="_blank">LinkedIn</a>
-      <a href="https://medium.com/@khalidmehri65" target="_blank">Medium</a>
+
+    <div class="skill-card" data-level="90">
+      <h3>CSS</h3>
+      <p>Beautiful, responsive layouts with Flexbox and Grid.</p>
+      <div class="skill-bar">
+        <div class="skill-progress" style="width: 90%;"></div>
+      </div>
+      <span class="skill-percent">90%</span>
+    </div>
+
+    <div class="skill-card" data-level="85">
+      <h3>JavaScript</h3>
+      <p>Dynamic interactivity and API-driven features.</p>
+      <div class="skill-bar">
+        <div class="skill-progress" style="width: 85%;"></div>
+      </div>
+      <span class="skill-percent">80%</span>
+    </div>
+
+    <div class="skill-card" data-level="92">
+      <h3>Blog Writing</h3>
+      <p>Engaging, SEO-optimized storytelling and clarity.</p>
+      <div class="skill-bar">
+        <div class="skill-progress" style="width: 92%;"></div>
+      </div>
+      <span class="skill-percent">85%</span>
+    </div>
+
+    <div class="skill-card" data-level="90">
+      <h3>Essay Writing</h3>
+      <p>Structured, persuasive, and well-researched writing.</p>
+      <div class="skill-bar">
+        <div class="skill-progress" style="width: 90%;"></div>
+      </div>
+      <span class="skill-percent">90%</span>
     </div>
   </div>
-</footer>
-<!-- Contact Form Popup -->
+</section>
 
-  <div id="contactModal" class="modal">
-  <div class="modal-content">
-    <span class="close-btn">&times;</span>
-    <h2>Contact Me</h2>
-    <form action="https://formspree.io/f/mpwlwgbr" method="POST" class="contact-form">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
-      <button type="submit" class="fancy-btn">Send Message</button>
-    </form>
-    <div class="success-msg">✅ Your message has been sent!</div>
+
+<section id="projects">
+  <h2 class="section-title">My Work</h2>
+
+  <div class="project-tabs">
+    <button class="tab-btn active" data-target="frontend">Frontend Projects</button>
+    <button class="tab-btn" data-target="blog">Blogs</button>
+    <button class="tab-btn" data-target="essay">Essays</button>
+  </div>
+
+  <!-- Frontend Projects -->
+  <div id="frontend" class="projects-container active">
+    <div class="project-card">
+       <img src="images/Gradient.png" alt="Gradient Generator" class="project-img">
+      <h3>Gradient Generator</h3>
+      <p>Interactive gradient color generator using HTML, CSS & JS.</p>
+      <a href="https://declutterqueen.github.io/Gradient-generator/" class="main-btn">View Project</a>
+    </div>
+    <div class="project-card">
+      <img src="images/weather.png" alt="Weather App" class="project-img">
+      <h3>Weather App</h3>
+      <p>Get live weather data for any city with JS API integration.</p>
+      <a href="https://declutterqueen.github.io/Weather-App/" class="main-btn">View Project</a>
+    </div>
+    <div class="project-card">
+      <img src="images/recipe-finder.png" alt="Recipe Explorer" class="project-img">
+      <h3>Recipe Explorer</h3>
+      <p>Interactive recipe finder built with HTML, CSS & JavaScript — search, filter, and save your favorite meals.</p>
+      <a href="https://recipeexplorer347.netlify.app" class="main-btn">View Project</a>
+    </div>
+    <div class="project-card">
+      <img src="images/currency.png" alt="Currency Converter" class="project-img">
+      <h3>Currency Converter</h3>
+      <p>Convert currencies with real-time exchange rates API.</p>
+      <a href="https://declutterqueen.github.io/Currency-converter/" class="main-btn">View Project</a>
+    </div>
+    <div class="project-card">
+       <img src="images/Todo-List.png" alt="To-Do-list" class="project-img">
+      <h3>To-Do List</h3>
+      <p>Manage tasks efficiently with a simple JS to-do app.</p>
+      <a href="https://declutterqueen.github.io/Todo-list-app/" class="main-btn">View Project</a>
+    </div>
+    <div class="project-card">
+       <img src="images/meal.png" alt="Online-meal" class="project-img">
+      <h3>Online Meal</h3>
+      <p>Responsive food ordering website using HTML & CSS.</p>
+      <a href="https://onlinemeals347.netlify.app" class="main-btn">View Project</a>
+    </div>
+
+  </div>
+
+  <!-- Blog Projects -->
+ <div id="blog" class="projects-container">
+  <div class="project-card small">
+    <h3>Top 10 Amazon Home Storage Organization Products That Actually Work</h3>
+    <p>Discover practical and highly-rated storage solutions that truly make home organization easier.</p>
+    <a href="https://declutterqueen.github.io/Declutter-portfolio/" target="_blank" class="secondary-btn">Read Blog</a>
+  </div>
+
+  <div class="project-card small">
+    <h3>Smart Small Bedroom Storage Ideas for Shared & Narrow Spaces</h3>
+    <p>Creative and space-saving bedroom storage tips perfect for apartments or compact shared rooms.</p>
+    <a href="https://theclutteredit.netlify.app" target="_blank" class="secondary-btn">Read Blog</a>
   </div>
 </div>
 
 
- 
+  <!-- Essay Projects -->
+  
+<div id="essay" class="projects-container">
+  <div class="project-card small">
+    <h3>The 5 Writing Mistakes That Are Killing Your Stories (And How to Fix Them)</h3>
+    <p>Learn how to fix the most common writing mistakes that weaken your stories — and make your writing shine.</p>
+    <a href="https://medium.com/@khalidmehri65/the-5-writing-mistakes-that-are-killing-your-stories-and-how-to-fix-them-ffa9b856ab73" target="_blank" class="secondary-btn">Read Essay</a>
+  </div>
+
+  <div class="project-card small">
+    <h3>20 Things I No Longer Buy Since Going Minimalist</h3>
+    <p>How embracing minimalism helped me stop buying things I didn’t need — and start spending intentionally.</p>
+    <a href="https://medium.com/@khalidmehri65/20-things-i-no-longer-buy-since-going-minimalist-a8ecf694673c" target="_blank" class="secondary-btn">Read Essay</a>
+  </div>
+</div>
+
+
+
+<!-- Education Section -->
+<section id="education" class="section education-section">
+  <h2 class="section-title">Education</h2>
+
+  <div class="education-container">
+    <div class="education-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS7pzk7Hj_Q7HW0IV1CsgRkXTuLTTLCOHDjw&s" 
+      alt="Govt. College Logo" class="edu-logo"  />
+      <h3>Govt. Degree College for Women, Dina</h3>
+      <p class="edu-degree">Intermediate in Computer Science (FA-ICS)</p>
+      <p class="edu-duration">Sep 2019 – Sep 2021</p>
+      <p class="edu-grade">Grade: A+</p>
+      <p class="edu-desc">
+        Studied Computer Science, Mathematics, and Economics. Improved problem-solving skills
+        and participated actively in projects, group work, and college events.
+      </p>
+    </div>
+    <div class="education-card">
+
+       <img src="https://e7.pngegg.com/pngimages/823/673/png-clipart-university-of-the-punjab-gujranwala-university-of-the-punjab-jhelum-punjab-university-law-college-islamia-university-admission-miscellaneous-logo.png" 
+           alt="University of the Punjab Logo" class="edu-logo" />
+      <h3>University of the Punjab</h3>
+      <p class="edu-degree">Bachelor of Arts in History / Political Science</p>
+      <p class="edu-duration">Oct 2021 – Oct 2023</p>
+      <p class="edu-grade">Grade: B</p>
+      <p class="edu-desc">
+        Joined study groups, attended seminars, and participated in academic discussions.
+        Gained deep understanding of social sciences and developed research and writing skills.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="contact-new-section" id="contact">
+  <!-- Top Centered Heading -->
+  <h1 class="contact-new-top-title">Contact Me</h1>
+
+  <div class="contact-new-container">
+    <!-- Left Column: Get in Touch + Cards -->
+    <div class="contact-new-left">
+      <h2 class="contact-new-title">Get in Touch</h2>
+      <p class="contact-new-intro">
+        Have a project in mind or just want to say hello?  
+        Let’s collaborate and build something creative together.
+      </p>
+
+      <!-- Contact Cards -->
+      <div class="contact-new-cards">
+        <div class="contact-new-card">
+          <i class="fa-solid fa-envelope"></i>
+          <div>
+            <h4>Email</h4>
+            <p>mehreen.khalid@Email.com</p>
+          </div>
+          <span class="css-arrow"></span>
+        </div>
+
+        <div class="contact-new-card">
+          <i class="fa-solid fa-phone"></i>
+          <div>
+            <h4>Call</h4>
+            <p>+92 303 7789456</p>
+          </div>
+           <span class="css-arrow"></span>
+        </div>
+
+        <div class="contact-new-card">
+          <i class="fa-solid fa-location-dot"></i>
+          <div>
+            <h4>Location</h4>
+            <p>Jhelum, Pakistan</p>
+          </div>
+          <!--<span class="contact-new-arrow">→</span>-->
+         <span class="css-arrow"></span>
+
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column: Form -->
+    <div class="contact-new-right">
+      <form action="https://formspree.io/f/mpwlwgbr" method="POST" class="contact-new-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="footer-creative">
+  <div class="footer-creative-container">
     
+    <!-- Left: Branding / Tagline -->
+    <div class="footer-branding">
+      <h2>Mehreen Khalid</h2>
+      <p>Transforming ideas into creative projects. Let’s collaborate and make something amazing.</p>
+    </div>
+
+    <!-- Right: Quick Actions -->
+    <div class="footer-actions">
+      <h3>Quick Actions</h3>
+      <button onclick="window.location.href='#contact'">Contact Me</button>
+      <button onclick="window.location.href='mailto:khalidmehri65@gmail.com'">Email Me</button>
+      <button onclick="window.location.href='#'">Download CV</button>
+    </div>
+
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <p>&copy; 2025 Mehreen Khalid. All rights reserved.</p>
+  </div>
+</footer>
 
 
 
-<script src="script.js"></script>
-
-
+  
+  <script src="script.js"></script>
 </body>
 </html>
-
-
