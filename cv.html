@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mehreen Khalid — CV</title>
+  <style>
+    :root{
+      --bg:#f6f7fb; --card:#ffffff; --accent:#0b7285; --muted:#6b7280; --radius:12px;
+      --maxw:900px; --gap:22px;
+      --sans: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    html,body{height:100%;}
+    body{
+      font-family:var(--sans); background:var(--bg); margin:0; padding:50px; color:#0f172a;
+      -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+      line-height:1.8;
+    }
+    .wrap{max-width:var(--maxw); margin:0 auto;}
+    .card{background:var(--card); border-radius:var(--radius); box-shadow:0 8px 30px rgba(12,15,20,0.06); padding:45px;}
+    .header{display:flex; align-items:center; justify-content:space-between; gap:20px; margin-bottom:30px;}
+    .name{font-size:32px; font-weight:700; letter-spacing:0.3px; margin-bottom:10px;}
+    .role{color:var(--muted); font-weight:600; font-size:15px;}
+    .contact{font-size:14px; color:var(--muted); text-align:right; line-height:1.7;}
+    .contact a{color:inherit; text-decoration:none}
+
+    .grid{display:grid; grid-template-columns:1fr 340px; gap:var(--gap); margin-top:32px}
+    @media (max-width:880px){.grid{grid-template-columns:1fr;}}
+
+    /* Left column */
+    .section{margin-bottom:28px}
+    h3{margin:0 0 16px 0; font-size:18px; color:#0b1220; letter-spacing:0.3px;}
+    p.lead{margin:0 0 16px 0; color:var(--muted); line-height:1.8; font-size:15px;}
+
+    .experience .item{margin-bottom:20px; line-height:1.8;}
+    .item .title{font-weight:700; margin-bottom:6px;}
+    .item .meta{font-size:14px; color:var(--muted); margin-bottom:12px;}
+    .item ul{margin:12px 0 0 22px; color:#1f2937;}
+    .item ul li{margin-bottom:10px;}
+
+    /* Right column */
+    .aside{background:linear-gradient(180deg, rgba(11,114,133,0.05), rgba(11,114,133,0.02)); padding:22px; border-radius:14px}
+    .skills{display:flex; flex-wrap:wrap; gap:10px}
+    .chip{background:#eef8fb; color:var(--accent); padding:8px 12px; border-radius:999px; font-weight:600; font-size:13px}
+    .edu .school{font-weight:700; margin-bottom:6px;}
+    .edu .meta{font-size:14px; color:var(--muted); margin-bottom:16px;}
+
+    .projects ul{padding-left:22px;}
+
+    .footer{margin-top:32px; font-size:14px; color:var(--muted); line-height:1.7;}
+
+    @media print{
+      body{padding:0}
+      .card{box-shadow:none}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card" role="document">
+
+      <header class="header">
+        <div>
+          <div class="name">Mehreen Khalid</div>
+          <div class="role">Frontend Web Developer · Freelance Writer</div>
+        </div>
+        <div class="contact">
+          <div>Dina, Punjab, Pakistan</div>
+          <div>mehreen@gmail.com · +92 341 568 7435</div>
+          <div><a href="#">linkedin.com/in/mehreenkhalid</a> · <a href="#">declutterqueen.com</a></div>
+        </div>
+      </header>
+
+      <main class="grid">
+        <section class="content">
+
+          <section class="section summary">
+            <h3>Professional Summary</h3>
+            <p class="lead">Creative Frontend Developer and experienced Freelance Writer with a focus on responsive, clean, and accessible websites. Skilled in HTML, CSS and JavaScript, I also write SEO-optimised articles and blogs on lifestyle, productivity, and home organization. Passionate about combining design, functionality, and content to create projects that engage and inspire users.</p>
+          </section>
+
+          <section class="section experience">
+            <h3>Experience</h3>
+
+            <div class="item">
+              <div class="title"> Frontend Developer</div>
+              <div class="meta">Self-employed · Feb 2025 – Present</div>
+              <ul>
+                <li>Design and develop responsive websites and landing pages with mobile-first layouts and intuitive user flows.</li>
+                <li>Created <strong>OnlineMeal.com</strong>, a clean and user-friendly food delivery interface built entirely with HTML and CSS.</li>
+                <li>Deployed projects on GitHub Pages and Netlify, including SEO optimization for discoverability.</li>
+              </ul>
+            </div>
+
+            <div class="item">
+              <div class="title">Freelance Writer & Blogger</div>
+              <div class="meta">Medium & Personal Blog · 2024– Present</div>
+              <ul>
+                <li>Write clear, engaging, and SEO-optimised content for blogs, lifestyle articles, and productivity guides.</li>
+                <li>Founder and writer of <strong>DeclutterQueen</strong> blog, providing insights on minimalism, home organization, and smart living.</li>
+                <li>Created and sold <em>Minimalist Living Starter Pack</em> — an ebook and printable checklist to help readers declutter effectively.</li>
+                <li>Manage content strategy, keyword research, and user-focused storytelling to increase reach and engagement.</li>
+              </ul>
+            </div>
+
+          </section>
+
+          <section class="section projects">
+            <h3>Selected Projects</h3>
+            <ul>
+              <li><strong>Resume Builder App</strong> — Interactive tool built with HTML, CSS and JS allowing live resume creation, customization, and PDF export.</li>
+              <li><strong>OnlineMeal.com</strong> — Responsive UI for a food delivery concept, designed for clarity, speed, and mobile use.</li>
+              <li><strong>DeclutterQueen</strong> — Blog and digital resource hub offering minimalism tips, printable guides, and home organization ideas.</li>
+            <li><strong>Recipe Finder</strong> — Web app that helps users search and discover recipes easily with a clean interface.</li>
+<li><strong>Weather App</strong> — Responsive app showing current weather and forecasts with simple, elegant UI.</li>
+<li><strong>Glassmorphism / Gradient Generator</strong> — Interactive tool for creating gradients and glassmorphism-style UI elements for web projects.</li>
+            </ul>
+          </section>
+
+        </section>
+
+        <aside class="aside">
+          <section class="section skills">
+            <h3>Skills</h3>
+            <div class="skills">
+              <span class="chip">HTML</span>
+              <span class="chip">CSS</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">Responsive Design</span>
+              <span class="chip">SEO Writing</span>
+              <span class="chip">Blog Writing</span>
+              <span class="chip">Content Strategy</span>
+              <span class="chip">GitHub Pages</span>
+              <span class="chip">Netlify</span>
+            </div>
+          </section>
+
+          <section class="section edu">
+            <h3>Education</h3>
+            <div class="school">BA — History / Political Science</div>
+            <div class="meta">University of the Punjab · Oct 2021 – Oct 2023</div>
+
+            <div style="height:16px"></div>
+
+            <div class="school">Intermediate in Computer Science (ICS)</div>
+            <div class="meta">Govt. Degree College for Women, Dina · Sep 2019 – Sep 2021</div>
+          </section>
+
+          <section class="section contact-cta">
+            <h3>Availability</h3>
+            <p class="lead">Open for remote freelance work in frontend development and content/blog writing. Available for short-term projects, collaborations, and ongoing contracts.</p>
+          </section>
+
+        </aside>
+      </main>
+
+      <div class="footer">Live demos, portfolio links, and writing samples available on request. Happy to share interactive projects and case studies.</div>
+    </div>
+  </div>
+</body>
+</html>
