@@ -1,9 +1,10 @@
 
 document.addEventListener("DOMContentLoaded", () => {
   const textArray = [
-    "I'm a Frontend Web Developer 🎨",
-    "I build clean, responsive websites 💻",
-    "I write creative blogs & essays ✍️"
+   "I'm a Frontend Web Developer",
+"I build clean, responsive websites",
+"I write clear, human-centered content"
+
   ];
 
   const typedText = document.getElementById("typed-text");
@@ -74,67 +75,7 @@ const skillObserver = new IntersectionObserver(entries => {
 
 skillCards.forEach(card => skillObserver.observe(card));
 
-// ===== Projects Tabs =====
-const tabButtons = document.querySelectorAll('.tab-btn');
-const projectSections = document.querySelectorAll('.projects-container');
-const frontendSection = document.getElementById('frontend');
-const frontendCards = frontendSection.querySelectorAll('.project-card');
-const loadMoreBtn = document.getElementById('load-more-frontend');
-let displayedCount = 3; // initially show 3 cards
 
-// Function to update Frontend cards display
-function updateFrontendDisplay() {
-  frontendCards.forEach((card, index) => {
-    card.style.display = index < displayedCount ? 'block' : 'none'; // use block for proper alignment
-  });
-  loadMoreBtn.style.display = displayedCount >= frontendCards.length ? 'none' : 'inline-block';
-}
-
-// Initial display (only hide extra Frontend cards)
-updateFrontendDisplay();
-
-// Load More button
-loadMoreBtn.addEventListener('click', () => {
-  displayedCount += 3;
-  updateFrontendDisplay();
-});
-
-// Tab click listener
-tabButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    // Deactivate all tabs
-    tabButtons.forEach(btn => btn.classList.remove('active'));
-    button.classList.add('active');
-
-    // Hide all sections
-    projectSections.forEach(sec => {
-      sec.style.display = 'none';
-      sec.classList.remove('active');
-    });
-
-    // Show clicked section
-    const target = button.getAttribute('data-target');
-    const activeSection = document.getElementById(target);
-    if (!activeSection) return;
-
-    activeSection.style.display = 'flex'; // container flex remains
-    activeSection.classList.add('active');
-
-    if (target === "frontend") {
-      displayedCount = 3;
-      updateFrontendDisplay();
-    } else {
-      // Show all cards for other tabs with block display
-      const otherCards = activeSection.querySelectorAll('.project-card');
-      otherCards.forEach(card => {
-        card.style.display = 'block'; // block ensures proper h3 and content alignment
-      });
-    }
-  });
-});
-
-// DO NOT trigger tab click on page load
-// Home section opens first, skills bar works
 
 
 
@@ -169,22 +110,70 @@ tabButtons.forEach(button => {
   });
 })();
 
-// ===== Writing Section Tabs =====
-const writingBtns = document.querySelectorAll('.writing-btn');
-const writingSections = document.querySelectorAll('.writing-container');
 
-writingBtns.forEach(btn => {
-  btn.addEventListener('click', () => {
-    writingBtns.forEach(b => b.classList.remove('active'));
-    writingSections.forEach(sec => {
-      sec.classList.remove('active');
-      sec.style.display = 'none';
+
+document.addEventListener('DOMContentLoaded', () => {
+  const tabButtons = document.querySelectorAll('.tab-btn');
+  const projectSections = document.querySelectorAll('.projects-container');
+
+  const featuredSection = document.getElementById('featured');
+  const featuredCards = featuredSection.querySelectorAll('.project-card');
+  const miniSection = document.getElementById('mini-projects');
+  const featuredShowCount = 6; // show first 6 cards
+
+  // ===== Functions =====
+  function showFeatured() {
+    featuredCards.forEach((card, index) => {
+      card.style.display = index < featuredShowCount ? 'block' : 'none';
     });
+    featuredSection.style.display = 'flex';
+    featuredSection.style.flexWrap = 'wrap';
+    featuredSection.style.gap = '20px';
+    featuredSection.classList.add('active');
+  }
 
-    btn.classList.add('active');
-    const targetId = btn.dataset.writing;
-    const targetSection = document.getElementById(targetId);
-    targetSection.style.display = 'flex';
-    setTimeout(() => targetSection.classList.add('active'), 50);
+  function showMini() {
+    const miniCards = miniSection.querySelectorAll('.project-card');
+    miniCards.forEach(card => card.style.display = 'block');
+    miniSection.style.display = 'flex';
+    miniSection.style.flexWrap = 'wrap';
+    miniSection.style.gap = '20px';
+    miniSection.classList.add('active');
+  }
+
+  function hideAllSections() {
+    projectSections.forEach(sec => {
+      sec.style.display = 'none';
+      sec.classList.remove('active');
+    });
+  }
+
+  // ===== Initial display =====
+  hideAllSections();
+  showFeatured(); // show featured first on page load
+  tabButtons.forEach(btn => btn.classList.remove('active'));
+  document.querySelector('.tab-btn[data-target="featured"]').classList.add('active');
+
+  // ===== Tab click listener =====
+  tabButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const target = button.getAttribute('data-target');
+
+      // Remove active class from all buttons & activate clicked one
+      tabButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+
+      // Hide all sections
+      hideAllSections();
+
+      // Show correct section
+      if (target === 'featured') {
+        showFeatured();
+      } else if (target === 'mini-projects') {
+        showMini();
+      }
+    });
   });
 });
+
+
